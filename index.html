@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menaka Sandamali — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="particles-canvas"></canvas>
+
+<!-- NAV -->
+<nav>
+  <a href="#home" class="nav-logo">Menaka.dev</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-badge"><span class="dot"></span> Available for opportunities</div>
+  <p class="hero-greeting">Hi there, I'm</p>
+  <h1 class="hero-name"><span class="grad">Menaka</span><br>Sandamali</h1>
+  <p class="hero-title"><span>Frontend Developer</span> &amp; ICT Educator</p>
+  <p class="hero-desc">A Business Information Systems undergraduate passionate about building beautiful web experiences and inspiring the next generation through technology education.</p>
+  <div class="hero-btns">
+    <a href="#projects" class="btn-grad">View My Work ✦</a>
+    <a href="#contact" class="btn-ghost">Let's Connect</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-n">3+</div><div class="stat-l">Projects</div></div>
+    <div class="stat"><div class="stat-n">8+</div><div class="stat-l">Technologies</div></div>
+    <div class="stat"><div class="stat-n">3rd</div><div class="stat-l">Year BIS</div></div>
+    <div class="stat"><div class="stat-n">USJ</div><div class="stat-l">University</div></div>
+  </div>
+  <div class="scroll-hint">Scroll to explore</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-photo reveal-left">
+        <div class="photo-wrapper">
+          <div class="photo-glow" style="top:30%;left:30%;"></div>
+          
+          <div class="photo-label">
+            
+            <img src="assets/photo.png" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+        </div>
+        <div class="about-badge">🎓 3rd Year<br>BIS (Hons)</div>
+      </div>
+      <div class="about-content reveal-right">
+        <div class="sec-tag">About Me</div>
+        <h2 class="sec-title">Passionate about <span class="grad">tech & teaching</span></h2>
+        <p class="about-bio">I'm a third-year Business Information Systems undergraduate at the University of Sri Jayewardenepura. I love building responsive, clean web applications and have a deep passion for making technology accessible through education.</p>
+        <p class="about-bio" style="margin-top:-1rem;">My goal is to bridge the gap between technology and education — becoming an impactful ICT Educator and Technical Trainer while delivering modern digital solutions.</p>
+        <div class="about-details">
+          <div class="adet"><span class="adet-label">Degree</span><span class="adet-val">B.Sc. (Hons) Business Information Systems</span></div>
+          <div class="adet"><span class="adet-label">University</span><span class="adet-val">University of Sri Jayewardenepura</span></div>
+          <div class="adet"><span class="adet-label">Faculty</span><span class="adet-val">Management Studies &amp; Commerce</span></div>
+          <div class="adet"><span class="adet-label">Duration</span><span class="adet-val">2023 — Present</span></div>
+        </div>
+        <a href="#" class="cv-btn">⬇ Download CV (PDF)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div style="text-align:center;" class="reveal">
+      <div class="sec-tag">My Skills</div>
+      <h2 class="sec-title">Tools of the <span class="grad">trade</span></h2>
+      <p class="sec-sub" style="margin:0 auto;">A versatile skill set spanning frontend, backend, databases, and creative design.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-card-icon">⚡</div>
+        <h3>Frontend Development</h3>
+        <div class="skill-tags">
+          <span class="stag">HTML5</span><span class="stag">CSS3</span><span class="stag">JavaScript</span>
+          <span class="stag">Responsive Design</span><span class="stag">UI/UX</span>
+        </div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:0.1s;">
+        <div class="skill-card-icon" style="background:rgba(249,115,22,0.1);">🔧</div>
+        <h3>Backend &amp; Databases</h3>
+        <div class="skill-tags">
+          <span class="stag orange">Python</span><span class="stag orange">C#</span><span class="stag orange">PHP</span>
+          <span class="stag orange">ASP.NET Core MVC</span><span class="stag orange">MySQL</span><span class="stag orange">Azure SQL</span>
+        </div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:0.2s;">
+        <div class="skill-card-icon" style="background:rgba(236,72,153,0.1);">🎨</div>
+        <h3>Design Tools</h3>
+        <div class="skill-tags">
+          <span class="stag pink">Adobe Photoshop</span><span class="stag pink">Figma</span><span class="stag pink">Canva</span>
+          <span class="stag pink">Git &amp; GitHub</span>
+        </div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:0.1s;grid-column:span 1;">
+        <div class="skill-card-icon" style="background:rgba(6,182,212,0.1);">🌟</div>
+        <h3>Soft Skills</h3>
+        <div class="skill-tags">
+          <span class="stag cyan">Communication</span><span class="stag cyan">Public Speaking</span>
+          <span class="stag cyan">Teamwork</span><span class="stag cyan">Problem-Solving</span><span class="stag cyan">Analytical Thinking</span>
+        </div>
+      </div>
+      <div class="skill-card reveal" style="transition-delay:0.2s;grid-column:span 2;">
+        <div class="skill-card-icon" style="background:rgba(124,58,237,0.1);">💡</div>
+        <h3>Professional Interests</h3>
+        <div class="skill-tags">
+          <span class="stag">ICT Education &amp; Pedagogy</span><span class="stag">Frontend Development</span>
+          <span class="stag">UI/UX Design</span><span class="stag">Python Programming</span><span class="stag">Full-Stack Development</span><span class="stag">Sinhala Media</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div style="text-align:center;" class="reveal">
+      <div class="sec-tag">My Work</div>
+      <h2 class="sec-title">Academic <span class="grad">Projects</span></h2>
+      <p class="sec-sub" style="margin:0 auto;">Real-world applications built with modern technologies and best practices.</p>
+    </div>
+    <div class="projects-grid">
+      <div class="proj-card reveal">
+        <div class="proj-top proj-top-1"><div class="proj-top-glow"></div><span class="proj-top-num">01</span></div>
+        <div class="proj-body">
+          <p class="proj-num-small">Project 01</p>
+          <h3 class="proj-title">Smart Post Office Management System</h3>
+          <p class="proj-desc">A comprehensive full-stack web app to digitize post office operations — parcel tracking, management, and frontend/backend/database built independently.</p>
+          <div class="proj-techs">
+            <span class="ptag">C#</span><span class="ptag">ASP.NET Core MVC</span><span class="ptag">Entity Framework</span><span class="ptag">Azure SQL</span>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card reveal" style="transition-delay:0.15s;">
+        <div class="proj-top proj-top-2"><div class="proj-top-glow"></div><span class="proj-top-num">02</span></div>
+        <div class="proj-body">
+          <p class="proj-num-small">Project 02</p>
+          <h3 class="proj-title">Smart Equipment Rental Management System</h3>
+          <p class="proj-desc">A dynamic platform for seamless equipment rental with automated database management and an intuitive, user-friendly interface.</p>
+          <div class="proj-techs">
+            <span class="ptag">PHP</span><span class="ptag">MySQL</span><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card reveal" style="transition-delay:0.3s;">
+        <div class="proj-top proj-top-3"><div class="proj-top-glow"></div><span class="proj-top-num">03</span></div>
+        <div class="proj-body">
+          <p class="proj-num-small">Project 03</p>
+          <h3 class="proj-title">Product Branding &amp; Packaging Design</h3>
+          <p class="proj-desc">Complete visual identity design — unique logos, professional packaging, and label layouts using advanced image editing and digital manipulation.</p>
+          <div class="proj-techs">
+            <span class="ptag">Adobe Photoshop</span><span class="ptag">Figma</span><span class="ptag">Canva</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div style="text-align:center;" class="reveal">
+      <div class="sec-tag">Contact</div>
+      <h2 class="sec-title">Let's <span class="grad">connect</span></h2>
+      <p class="sec-sub" style="margin:0 auto;">Open to collaborations, opportunities, and educational discussions.</p>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-info reveal-left">
+        <p class="contact-desc">If you'd like to collaborate, talk about technology, or discuss educational opportunities — I'd love to hear from you!</p>
+        <div class="cinfo-item">
+          <div class="cinfo-icon">✉️</div>
+          <div class="cinfo-text"><a href="mailto:your@gmail.com">your.email@gmail.com</a></div>
+        </div>
+        <div class="cinfo-item">
+          <div class="cinfo-icon">💼</div>
+          <div class="cinfo-text"><a href="#" target="_blank">linkedin.com/in/menaka-sandamali</a></div>
+        </div>
+        <div class="cinfo-item">
+          <div class="cinfo-icon">⌨️</div>
+          <div class="cinfo-text"><a href="#" target="_blank">github.com/menaka-sandamali</a></div>
+        </div>
+        <div class="cinfo-item">
+          <div class="cinfo-icon">📍</div>
+          <div class="cinfo-text">Sri Lanka</div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="slink">in</a>
+          <a href="#" class="slink">GH</a>
+          <a href="#" class="slink">✉</a>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="contact-form">
+          <form onsubmit="sendMsg(event)">
+            <div class="form-group">
+              <label class="form-label" for="fn">Your Name</label>
+              <input class="form-input" type="text" id="fn" placeholder="e.g. Kasun Perera" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="fe">Email Address</label>
+              <input class="form-input" type="email" id="fe" placeholder="hello@example.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="fs">Subject</label>
+              <input class="form-input" type="text" id="fs" placeholder="Collaboration, opportunity…">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="fm">Message</label>
+              <textarea class="form-textarea" id="fm" placeholder="Tell me about your idea…" required></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send Message ✦</button>
+            <div id="form-success">✅ Message sent! I'll get back to you soon.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2024 <span>Menaka Sandamali</span> · Built with HTML, CSS &amp; JavaScript · University of Sri Jayewardenepura</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
