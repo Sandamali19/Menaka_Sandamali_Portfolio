@@ -954,3 +954,46 @@ footer span {
     object-fit: cover;     /* ඉමේජ් එක ඇදෙන්නේ නැතුව මුළු කාඩ් එකම වැහෙන්න */
     object-position: center; /* ඉමේජ් එකේ මැද හරිය focus කරන්න */
 }
+/* 1. ප්‍රධාන Card එකේ Style එක */
+.proj-card {
+    background: #0d1117; /* ඔයාගේ dark background එක */
+    border-radius: 20px; /* කාඩ් එකේ දාර වටකුරු කරනවා */
+    
+    overflow: hidden;    /* ⬅️ ඉතාමත් වැදගත්! මේකෙන් තමයි image එකේ උඩ කොන් දෙක කාඩ් එකේ හැඩයටම කපලා ගන්නේ */
+    
+    display: flex;
+    flex-direction: column;
+    height: 100%;        /* Cards තුනම එකම උසකින් තියාගන්න */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 2. Image එක තියෙන Container එක */
+.proj-top {
+    position: relative;
+    width: 100%;
+    height: 200px;       /* Image එක පේන්න ඕන උස (මෙතනින් පාලනය කරන්න පුළුවන්) */
+    overflow: hidden;
+}
+
+/* 3. Cards 3 ඇතුළේ තියෙන සියලුම Images වලට පොදුවේ බලපාන Style එක */
+.proj-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* ⬅️ රූපය ඇද නොවී, නියමිත උසට සහ පළලට ලස්සනට fit වෙන්න */
+    object-position: top center; /* වෙබ් සයිට් screenshots වල උඩ කොටස ලස්සනට පේන්න */
+    display: block;
+}
+
+/* 4. අකුරු සහ Tags තියෙන පල්ලෙහා කොටස */
+.proj-body {
+    padding: 24px;       /* අකුරු වටේට ලස්සන පරතරයක් (Padding) දෙනවා */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;        /* විස්තරය අඩු වැඩි වුනත් Card එකේ ඉතිරි ඉඩ සම්පූර්ණයෙන්ම ගන්නවා */
+}
+
+/* 5. තාක්ෂණික tags (C#, PHP...) තියෙන කොටස හැමවිටම කාඩ් එකේ පතුලටම push කිරීමට */
+.proj-techs {
+    margin-top: auto;    /* ⬅️ මේකෙන් tags ටික කාඩ් එකේ යටම මට්ටමට ලස්සනට align වෙනවා */
+    padding-top: 16px;
+}
